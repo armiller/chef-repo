@@ -11,15 +11,3 @@
 magic_shell_environment 'EDITOR' do
     value 'vim'
 end
-
-magic_shell_alias 'll' do
-	command 'ls -lah'
-end
-
-magic_shell_alias 'la' do
-	command 'ls -lah'
-end
-
-magic_shell_alias 'gpr' do
-	command 'git pull --rebase'
-end
