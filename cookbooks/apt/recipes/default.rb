@@ -29,19 +29,19 @@ end
 execute "apt-get update" do
   command "apt-get update"
   ignore_failure true
-  action :nothing
+  action :run
 end
 
 # Automatically remove packages that are no longer needed for dependencies
 execute "apt-get autoremove" do
   command "apt-get -y autoremove"
-  action :nothing
+  action :run
 end
 
 # Automatically remove .deb files for packages no longer on your system
 execute "apt-get autoclean" do
   command "apt-get -y autoclean"
-  action :nothing
+  action :run
 end
 
 # provides /var/lib/apt/periodic/update-success-stamp on apt-get update
